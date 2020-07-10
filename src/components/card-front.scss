@@ -1,0 +1,28 @@
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  background: #ffff00;
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+
+  &:hover {
+    background: #d9d900;
+  }
+
+  &:active {
+    background: #b3b300;
+  }
+}
