@@ -2,7 +2,6 @@ import * as React from 'react';
 import { DogImage } from './dog-image';
 import { Container } from './container';
 import './card-back.scss';
-import backIcon from '@assets/arrow-left.png?as-module';
 
 interface CardBackProps {
   humanAge: string;
@@ -14,7 +13,7 @@ export const CardBack: React.FC<CardBackProps> = ({ humanAge, goBack }) => {
     <Container>
       <img
         className="back-icon"
-        src={backIcon}
+        src="https://partnersontheroad.com/wp-content/uploads/2020/07/arrow-left.png"
         alt="go back icon"
         onClick={goBack}
       />
