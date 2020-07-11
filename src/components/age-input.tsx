@@ -13,7 +13,9 @@ export const AgeInput: React.FC<AgeInputProps> = ({ age, setAge }) => {
   };
   return (
     <div className="input-container">
-      <label className="input-label">Enter your dog's age in years:</label>
+      <label className="input-label">
+        Insira a idade do seu cachorro em anos:
+      </label>
       <input className="input" type="number" value={age} onChange={onChange} />
     </div>
   );

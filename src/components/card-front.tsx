@@ -25,7 +25,9 @@ export const CardFront: React.FC<CardFrontProps> = ({
   return (
     <form onSubmit={onSubmit}>
       <Container>
-        <h2 className="title">If your dog were human, how old would he be?</h2>
+        <h2 className="title">
+          Se o seu cachorro fosse humano, quantos anos ele teria?
+        </h2>
         <DogImage />
         <AgeInput age={age} setAge={setAge} />
         <button
@@ -36,7 +38,7 @@ export const CardFront: React.FC<CardFrontProps> = ({
             'button-disabled': !buttonEnabled,
           })}
         >
-          Calculate
+          Calcular
         </button>
       </Container>
     </form>
