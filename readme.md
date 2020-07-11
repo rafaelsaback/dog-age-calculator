@@ -1,1 +1,1 @@
-This is a simple React template project.
+A calculator to convert a dog's age into human years.
