@@ -1,0 +1,23 @@
+.back-icon {
+  display: flex;
+  align-self: flex-start;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.human-age-text {
+  color: #ffff00;
+  font-weight: bold;
+  font-size: 100px;
+  margin: 20px 0;
+}
+
+.secondary-text {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}

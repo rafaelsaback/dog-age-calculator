@@ -12,7 +12,7 @@ module.exports = {
     alias: {
       // Creates alias 'assets' in order to import as following: 'assets/**'.
       // This is done in order to omit such long imports: '../../../../../assets/**'
-      '@assets': path.join(__dirname, 'src/assets'),
+      '@assets': path.join(__dirname, 'assets'),
     },
     extensions: ['.tsx', '.ts', '.js'],
   },
