@@ -4,6 +4,7 @@ import { AgeInput } from './age-input';
 import './card-front.scss';
 import { Dispatch } from 'react';
 import { Container } from './container';
+import * as cn from 'classnames';
 
 interface CardFrontProps {
   age: string;
@@ -16,14 +17,28 @@ export const CardFront: React.FC<CardFrontProps> = ({
   setAge,
   onCalculate,
 }) => {
+  const buttonEnabled = parseFloat(age) > 0;
+  const onSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    onCalculate();
+  };
   return (
-    <Container>
-      <h2 className="title">If your dog were human, how old would he be?</h2>
-      <DogImage />
-      <AgeInput age={age} setAge={setAge} />
-      <button className="button" onClick={onCalculate}>
-        Calculate
-      </button>
-    </Container>
+    <form onSubmit={onSubmit}>
+      <Container>
+        <h2 className="title">If your dog were human, how old would he be?</h2>
+        <DogImage />
+        <AgeInput age={age} setAge={setAge} />
+        <button
+          type="submit"
+          disabled={!buttonEnabled}
+          className={cn('button', {
+            'button-enabled': buttonEnabled,
+            'button-disabled': !buttonEnabled,
+          })}
+        >
+          Calculate
+        </button>
+      </Container>
+    </form>
   );
 };

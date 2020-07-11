@@ -10,19 +10,27 @@
 .button {
   width: 200px;
   height: 50px;
-  background: #ffff00;
-  color: rgba(0, 0, 0, 0.87);
   border-radius: 50px;
   font-size: 20px;
   font-weight: bold;
   outline: none;
   border: none;
 
-  &:hover {
-    background: #d9d900;
+  &-enabled {
+    background: #ffff00;
+    color: rgba(0, 0, 0, 0.87);
+
+    &:hover {
+      background: #d9d900;
+    }
+
+    &:active {
+      background: #b3b300;
+    }
   }
 
-  &:active {
-    background: #b3b300;
+  &-disabled {
+    background: #868686;
+    color: rgba(35, 35, 35, 0.87);
   }
 }

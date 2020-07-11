@@ -21,10 +21,10 @@ export const CardBack: React.FC<CardBackProps> = ({ humanAge, goBack }) => {
       <DogImage />
       <div className="result-container">
         <div className="secondary-text">
-          If your dog were a human, he would be
+          If your dog were human, he would be
         </div>
         <div className="human-age-text">{humanAge}</div>
-        <div className="secondary-text">years old</div>
+        <div className="secondary-text">years old!</div>
       </div>
     </Container>
   );
