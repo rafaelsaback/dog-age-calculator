@@ -5,8 +5,8 @@ import { useViewportSize } from '../use-viewport-size';
 export const DogImage: React.FC = () => {
   const [vpWidth] = useViewportSize();
 
-  const imgWidth = vpWidth > 350 ? '190' : '137';
-  const imgHeight = vpWidth > 350 ? '162' : '117';
+  const imgWidth = vpWidth > 600 ? '190' : '137';
+  const imgHeight = vpWidth > 600 ? '162' : '117';
 
   return (
     <div className="img-container">

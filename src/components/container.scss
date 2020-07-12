@@ -6,11 +6,9 @@
   padding: 40px 30px;
   border-radius: 50px;
   max-width: 400px;
-  min-height: 550px;
-  max-height: 660px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .container {
     padding: 25px 20px;
   }
