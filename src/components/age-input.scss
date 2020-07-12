@@ -10,9 +10,16 @@
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 400px) {
+  .input-label {
+    font-size: 18px
+  }
+}
+
 .input {
   height: 50px;
   width: 320px !important;
+  max-width: 80vw;
   background: #FFFFFF;
   border-radius: 50px !important;
   text-align: center;
