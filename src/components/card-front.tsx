@@ -26,7 +26,7 @@ export const CardFront: React.FC<CardFrontProps> = ({
     <form onSubmit={onSubmit}>
       <Container>
         <h2 className="title">
-          Se o seu cachorro fosse humano, quantos anos ele teria?
+          Se seu cachorro fosse humano, quantos anos ele teria?
         </h2>
         <DogImage />
         <AgeInput age={age} setAge={setAge} />
